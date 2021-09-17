@@ -14,4 +14,5 @@ cache:
 # Before
 before_install:
     - bundle install
+    - cd cancel-it/
     - bundle exec pod install
