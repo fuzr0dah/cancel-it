@@ -2,7 +2,7 @@
 language: swift
 osx_image: xcode12.5
 podfile: cancel-it/Podfile
-xcode_workspace: cancel-it/cancel-it.xcworkspace
+xcode_workspace: cancel-it.xcworkspace
 xcode_scheme: cancel-it
 xcode_destination: platform=iOS Simulator,OS=14.5,name=iPhone 12
 
