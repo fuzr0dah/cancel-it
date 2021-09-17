@@ -1,0 +1,22 @@
+platform :ios, '13.0'
+use_frameworks!
+inhibit_all_warnings!
+
+target 'cancel-it' do
+  
+  pod 'Firebase/Analytics'
+  pod 'Swinject'
+  pod 'Moya'
+  pod 'Kingfisher'
+  pod 'GoogleSignIn'
+  pod 'SnapKit'
+  pod 'lottie-ios'
+
+  target 'cancel-itTests' do
+    inherit! :complete
+
+    pod 'Nimble'
+
+  end
+
+end

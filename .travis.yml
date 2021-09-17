@@ -1,0 +1,18 @@
+# Environment setup
+language: swift
+osx_image: xcode12.5
+podfile: ./cancel-it/Podfile
+
+# Caching
+cache:
+  bundler: true
+  cocoapods: true
+
+# Before
+before_install:
+    - bundle install
+    - bundle exec pod install
+    
+xcode_workspace: ciTest.xcworkspace
+xcode_scheme: ciTest
+xcode_destination: platform=iOS Simulator,OS=14.5,name=iPhone 12
